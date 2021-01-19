@@ -1,0 +1,43 @@
+$color-eggShell: grey;
+$fontSize50: 50px;
+$fontSize24: 24px;
+$fontSize32: 32px;
+
+.results {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-eggShell;
+    z-index: 2;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 1px;
+    font-size: $fontSize24;
+}
+
+.active {
+    height: 100%;
+    max-height: 700px;
+}
+
+.heading {
+    font-size: $fontSize50;
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+}
+
+@media all and (max-width: 460px) {
+    .active {
+       height: 100%;
+    }
+    .heading {
+        font-size: $fontSize32;
+        padding-top: 30px;
+    }
+  }

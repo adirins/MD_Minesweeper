@@ -1,0 +1,71 @@
+
+$white: rgb(255, 255, 255);
+$fontSize24: 24px;
+$color-terraCota: #e07a5f;
+$color-independence: #3d405b;
+$color-greenSheen: #81b29a;
+$boxShadowInset: inset 0px 0px 0px 2px $color-independence;
+$boxShadowInsetMobile: inset 0px 0px 0px 1px $color-independence;
+
+.cellClose {
+    position: relative;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-greenSheen;
+    outline: none;
+    padding: 0;
+    box-shadow: $boxShadowInset;
+    transition: 0.2s all;
+    &:hover {
+        opacity: 0.9
+    }
+}
+
+.cellOpen {
+    position: relative;
+    cursor: pointer;
+    background-color: $white;
+    box-shadow: $boxShadowInset;
+}
+
+.cellOpenText {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: $color-terraCota;
+    font-size: $fontSize24;
+}
+
+.image {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 2;
+    top: 2;
+}
+
+.flag {
+    background-image: url('../../assets/images/flag.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+@media all and (max-width: 460px) {
+    .cellClose{
+        box-shadow: $boxShadowInsetMobile;
+    }
+    .cellOpen{
+        box-shadow: $boxShadowInsetMobile;
+    }
+  }

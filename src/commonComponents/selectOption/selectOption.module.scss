@@ -1,0 +1,43 @@
+
+$fontSize24: 24px;
+$fontSize32: 32px;
+$TextShadow: 0px 0px 1px rgb(255, 255, 255);
+$color-eggShell : #f4f1de;
+$color-deepChampagne : #f2cc8f;
+
+
+.label{
+    font-size: $fontSize32;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 0 5px;
+    text-align: center;
+}
+.select {
+    padding: 5px 15px;
+    background-color: $color-deepChampagne;
+    font-size: $fontSize24;
+    text-shadow: $TextShadow;
+    text-transform: capitalize;
+    display: flex;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.option{
+    background-color: $color-eggShell;
+}
+
+@media all and (max-width: 460px) {
+    .label{
+        font-size: $fontSize24;
+        margin-top: 15px;
+    }
+  }

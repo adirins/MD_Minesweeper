@@ -1,0 +1,32 @@
+$color-deepChampagne : #f2cc8f;
+$color-terraCota : #e07a5f;
+$color-greenSheen : #81b29a;
+$fontSize16: 16px;
+
+.table {
+    padding: 20px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.tableTh {
+    background-color: $color-terraCota;
+}
+
+.tableTr {
+    text-align: center;
+    background-color: $color-deepChampagne;
+}
+
+.newResult{
+    background-color: $color-greenSheen;
+}
+
+@media all and (max-width: 460px) {
+    .tableTh{
+        font-size: $fontSize16;
+    }
+    .tableTr{
+        font-size: $fontSize16;
+    }
+  }

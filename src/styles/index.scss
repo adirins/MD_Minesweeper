@@ -1,0 +1,13 @@
+$color-eggShell :grey;
+$color-independence : #3d405b;
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  background-color: $color-eggShell;
+  color: $color-independence;
+}

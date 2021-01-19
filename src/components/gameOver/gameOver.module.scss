@@ -1,0 +1,48 @@
+
+$fontSize24: 24px;
+$color-eggShell : #f4f1de;
+$color-terraCota : rgb(224, 122, 95);
+
+.gameOver {
+    position: absolute;
+    top: 0;
+    width: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameOverText {
+    font-size: $fontSize24;
+    font-weight: 700;
+    width: 100%;
+    max-width: 300px;
+    color: $color-terraCota;
+    padding: 2px 5px;
+    margin-top: 20px;
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.gameOverGG {
+    font-size:150px;
+    color: $color-terraCota;
+    margin-top: 0;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 30px;
+    animation: gg 2s infinite;
+    animation-iteration-count: 3;
+}
+
+@keyframes gg {
+    50% {
+        color: $color-terraCota;
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
